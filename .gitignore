@@ -1,0 +1,12 @@
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.env.development
+.env.production
+node_modules
+.cache/
+.history/
+# Build directory
+public/
+static/admin/*.bundle.*
+.DS_Store
+yarn-error.log

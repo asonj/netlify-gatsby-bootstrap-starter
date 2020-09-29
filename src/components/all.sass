@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800&family=Roboto:wght@400;500&display=swap')
+@import "./include-media.scss"
+
+// Config vars
+$brand-1: #001e64
+$brand-2: #2ab95b
+$brand-3: #cbb247
+$brand-gray: rgb(117, 117, 117)
+$white: #f8f9fa
+$off-white: #f4f4f4
+$primary: $brand-1
+$body-color: #333
+$black: #2b2523
+$primary-invert: $black
+
+$font1: "Overpass", "Helvetica", "Arial", sans-serif
+$font2: "Roboto", "Helvetica", "Arial", sans-serif
+
+body
+  font-family: $font1
+  font-weight: 500
+  font-size: 16px
+  line-height: 1.5
+  color: $primary-invert
+  background-color: $white
+  .bg-white
+    background: #fff
+body p a
+  color: $brand-2
+
+body .navbar
+  padding-top: 0
+  padding-bottom: 0
+  font-weight: normal
+  background-color: $off-white
+  .dropdown:hover > .dropdown-menu
+    display: block
+
+  .dropdown-item
+    &:hover a
+      text-decoration: none !important
+      color: lighten($brand-1, 50%)
+    &:active
+      color: $brand-1
+      background-color: darken($white, 5%)
+  .nav-link
+    color: $brand-1 !important
+    padding-right: .75em !important
+    padding-left: .75em !important
+    a
+      color: $brand-1
+      &:hover
+        text-decoration: none !important
+        color: lighten($brand-1, 50%)
+  .popup
+    max-width: 500px
+    position: fixed
+    bottom: 1%
+    right: 1%
+    .ebook-small
+      margin-right: 8px
+      width: 3em
+      height: auto
+body h1
+  font-family: $font1
+  font-weight: 800
+
+body h2
+  font-family: $font1
+  font-weight: 800
+  font-size: 40px
+  color: $brand-2
+  padding-bottom: 3%
+
+body h3
+  font-family: $font1
+  font-weight: 800
+  color: $brand-2
+
+body p
+  font-family: $font1
+  font-weight: 500
+  line-height: 1.7
+
+.green
+  color: $brand-2 !important
+.blue
+  color: $brand-1 !important
+.white
+  color: $white !important
+.black, .black h2, .black h3
+  color: $black !important
+.gray, .gray h2, .gray h3
+  color: $brand-gray !important
+
+.no-link-style
+  text-decoration: none
+  color: inherit
+  &:hover
+    text-decoration: none
+.hover:hover
+  text-decoration: underline
+
+.title
+  color: $white
+  font-size: 5rem
+
+// Helper Classes
+.full-width-image-container
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-image
+  height: 100vh
+  background-size: cover
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+footer.footer
+  color: $white
+  padding: 3rem 0rem 3rem
+  background-color: $brand-1
+
+.social a
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: #fff
+  margin: .5em
+  width: 1em
+  height: 1em
+  display: inlin
+
+.form
+  color: $black
+
+.section
+  padding: 5% 5%
+  .row
+    padding-bottom: 3%
